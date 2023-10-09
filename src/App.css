@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-item:hover {
+  text-decoration: underline;
+  color:rgb(0, 140, 255);
+}
