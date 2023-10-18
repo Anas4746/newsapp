@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="conatiner">
             <nav className="navbar navbar-expand-lg fixed-top" style={{ backgroundColor: 'rgb(249 249 249)' }}>
                 <div className='container justify-content-center d-flex'>
-                    <div><h2 style={{ marginLeft: '-120%', color: '#0672cb' }}>News Update</h2></div>
+                    <div><h2 style={{ marginLeft: '-120%', color: '#0672cb' }}>Global News</h2></div>
                     <div>
                         <div className='my-2'> ENGLISH | தமிழ் | বাংলা | മലയാളം | ગુજરાતી | हिंदी | मराठी </div>
                         <div className='d-flex'>
