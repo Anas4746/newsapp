@@ -10,7 +10,7 @@ const News = (props) => {
     const [loading, setloading] = useState(true);
     const [page, setpage] = useState(1);
     const [totalResults, settotalResults] = useState(0);
-
+    console.log(props.category)
     const newsUpdate = async () => {
         props.setProgress(10)
         const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.api_key}&page=${page}&pageSize=${props.pageSize}`
@@ -52,9 +52,10 @@ const News = (props) => {
         setloading(false)
 
     }
+
     return (
 
-        <div className='container' style={{ marginTop: '7rem' }}>
+        <div className='news_container container'>
             {loading && <Spinner />}
             <InfiniteScroll
                 dataLength={article.length}

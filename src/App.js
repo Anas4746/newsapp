@@ -3,8 +3,33 @@ import './App.css';
 import React, { useState } from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
+import { BrowserRouter as Router } from 'react-router-dom';
+
+// const App = () => {
+//   const location = useLocation();
+//   const page = 5
+//   const api_key = process.env.REACT_APP_NOT_SECRET_CODE
+//   const [progress, setProgress] = useState(0)
+//   const [category, setCategory] = useState('/general')
+//   setCategory(category.substring(1))
+//   return (
+//     <>
+//       {/* <News api_key={api_key} setProgress={setProgress}  pageSize={page} country='in' category='general' /> */}
+//       <Navbar />
+//       <LoadingBar
+//         color='#f11946'
+//         height={5}
+//         progress={progress}
+//       />
+//       <Routes>
+//         <Route exact path={location.pathname} element={<News api_key={api_key} setProgress={setProgress} key='general' pageSize={page} country='in' category={category} />}>
+//         </Route>
+//       </Routes>
+//     </>
+//   )
+// }
 
 const App = () => {
   const page = 5
